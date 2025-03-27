@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль | CS2 Highlights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Профиль игрока</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="#">Загрузить хайлайт</a>
+            <a href="profile.html">Профиль</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile">
+            <img id="avatar" src="default-avatar.png" alt="Аватар">
+            <h2 id="nickname">Игрок</h2>
+            <p><strong>Ранг:</strong> <span id="rank">Нет данных</span></p>
+            <p><strong>Любимая карта:</strong> <span id="favorite-map">Не указано</span></p>
+            <p><strong>Любимое оружие:</strong> <span id="favorite-weapon">Не указано</span></p>
+            <button onclick="editProfile()">Редактировать профиль</button>
+        </section>
+
+        <section id="user-highlights">
+            <h2>Мои хайлайты</h2>
+            <div class="highlight">
+                <video controls>
+                    <source src="highlight1.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+                <p>Невероятный клатч на Inferno!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 CS2 Highlights</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
